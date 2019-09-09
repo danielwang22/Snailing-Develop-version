@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 157 158">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-bin);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #3f5d45;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-bin">
+      <rect width="157" height="158"/>
+    </clipPath>
+  </defs>
+  <g id="bin" class="cls-1">
+    <rect class="cls-4" width="157" height="158"/>
+    <g id="delete_outline-24px" transform="translate(-6 -6)">
+      <path id="Path_413" data-name="Path 413" class="cls-2" d="M0,169.07V0H169.07V169.07Z"/>
+      <g id="Group_65" data-name="Group 65" transform="translate(28.178 14.089)">
+        <path id="Path_414" data-name="Path 414" class="cls-3" d="M74.268,16l-7.045,7.045H32V37.134H144.714V23.045H109.491L102.446,16ZM39.045,51.223V142.8a14.131,14.131,0,0,0,14.089,14.089H123.58A14.131,14.131,0,0,0,137.669,142.8V51.223ZM60.178,65.312H74.268V142.8H60.178Zm42.268,0h14.089V142.8H102.446Z" transform="translate(-32 -16)"/>
+      </g>
+    </g>
+  </g>
+</svg>

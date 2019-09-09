@@ -1,0 +1,37 @@
+.d-grid{
+    display: grid;
+}
+.grid-row{
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,minmax(100px,1fr));
+    grid-auto-flow:column;
+    width: 100%;
+    grid-gap: 5px;
+}
+@media only screen and (max-width:576px) {
+    .grid-row{
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(3,minmax(100px,1fr));
+        grid-gap: 15px;
+    }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    @for $i from 1 through 7 {
+            .grid-col#{$infix}-start-#{$i} {
+                grid-column-start: $i
+            }
+            .grid-col#{$infix}-span-#{$i} {
+                grid-column-end: span $i
+            }
+            .grid-row#{$infix}-start-#{$i}{
+                grid-row-start: $i;
+            }
+            .grid-row#{$infix}-span-#{$i}{
+                grid-row-end: span $i;
+            }
+        }
+    }
+  }
